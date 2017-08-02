@@ -91,13 +91,13 @@ def bucket(n):
         else:
             print("Wrong Move!!!")
         n=n-1
-    if(p==4 and q==4):
-        if(n==7):
-            return 1
-        else:
-            return 2
-    else:
-        return 0
+        if(p==4 and q==4):
+            if(n==7):
+                return 1
+            else:
+                return 2
+        
+    return 0
 
 ch='Y'
 while(ch!='N'):
@@ -115,4 +115,3 @@ while(ch!='N'):
         print("You lose !!!!!!!")
     print("Do You wish to play another game? Press Y or N only")
     ch=input()
-    
